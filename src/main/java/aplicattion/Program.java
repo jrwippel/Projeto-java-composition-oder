@@ -24,7 +24,7 @@ public class Program {
 
         Client client = new Client(nameClient, emailClient, dateBirth);
 
-        System.out.print("Enter order data:");
+        System.out.println("Enter order data:");
         System.out.print("Status:");
         OrderStatus status = OrderStatus.valueOf(sc.next());
 
@@ -36,7 +36,7 @@ public class Program {
         int n = sc.nextInt();
 
         for (int i=0;i<n;++i){
-            System.out.println("Enter #"+ (i + 1) +"item data:");
+            System.out.println("Enter #"+ (i + 1) +" item data:");
             System.out.print("Product name:");
             sc.nextLine();
             String productName = sc.nextLine();
@@ -50,14 +50,9 @@ public class Program {
             order.addItem(orderItem);
         }
         System.out.println();
-        System.out.print("ORDER SUMMARY:");
-
-
+        System.out.println("ORDER SUMMARY:");
         System.out.println(order);
-
-
         sc.close();
-
     }
 
 
