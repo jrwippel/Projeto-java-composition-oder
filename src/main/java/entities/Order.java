@@ -64,7 +64,7 @@ public class Order {
     public double total (){
         double sum = 0;
         for (OrderItem c : orderItems){
-            sum += c.getQuantity() * c.subTotal();
+            sum +=c.subTotal();
         }
         return sum;
     }
